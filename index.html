@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Sitio en Azure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="logo">R1A2H1L1</span>
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#cloud">Nube</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hola, soy <span class="accent">R1A2H1L1</span></h1>
+      <p>Sitio desplegado en <strong>Azure Static Web Apps</strong> como parte de una práctica de computación en la nube.</p>
+      <a href="#about" class="btn">Ver más</a>
+    </div>
+    <div class="badge">
+      <div class="badge-icon">☁️</div>
+      <div class="badge-text">Hosted on<br><strong>Azure SWA</strong></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>Sobre el proyecto</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>Deploy automático</h3>
+        <p>Cada push a GitHub dispara un nuevo deploy automático via GitHub Actions.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>HTTPS incluido</h3>
+        <p>Azure gestiona el certificado SSL automáticamente sin configuración extra.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌍</div>
+        <h3>CDN global</h3>
+        <p>El contenido se sirve desde el edge más cercano al usuario en todo el mundo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cloud" class="section alt">
+    <h2>¿Por qué Azure Static Web Apps?</h2>
+    <table>
+      <thead>
+        <tr><th>Característica</th><th>Detalle</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Modelo de servicio</td><td>PaaS / Serverless</td></tr>
+        <tr><td>Plan gratuito</td><td>Sí — suficiente para proyectos pequeños</td></tr>
+        <tr><td>CI/CD</td><td>Automático con GitHub Actions</td></tr>
+        <tr><td>HTTPS</td><td>Incluido y automático</td></tr>
+        <tr><td>Escalado</td><td>Automático, sin configuración</td></tr>
+        <tr><td>Costo estimado</td><td>$0/mes (Free tier)</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contacto</h2>
+    <p>Universidad de Antioquia · Ingeniería de Sistemas · 2026</p>
+    <p><a href="https://github.com/R1A2H1L1" class="btn" target="_blank">Ver en GitHub</a></p>
+  </section>
+
+  <footer>
+    <p>Desplegado con Azure Static Web Apps · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
